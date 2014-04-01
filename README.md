@@ -2,13 +2,13 @@
 
 Progress bar with polymerJS
 
-> Maintained by [Vinay](https://github.com/PebbleRoad).
+> Maintained by [Vinay](https://github.com/rmdort).
 
 ** Styling only works with Chrome canary **
 
 ## Demo
 
-> [Check it live](http://pebbleroad.github.io/polyer-progress-bar).
+> [Check it live](http://rmdort.github.io/polymer-progress-bar).
 
 ## Usage
 
