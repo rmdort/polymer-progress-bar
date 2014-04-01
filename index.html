@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;progress-bar&gt;</title>
+
+    <!-- Importing Web Component's Polyfill -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/platform.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/polymer/0.1.4/polymer.js"></script>
+
+    <!-- Importing Custom Elements -->
+    <link rel="import" href="src/progress-bar.html">
+</head>
+<body>
+
+    <!-- Using Custom Elements -->
+    <progress-bar value="60%"></progress-bar>
+    
+    <p>
+        <em>Styling only works with Chrome canary</em>
+    </p>
+   
+    <h2>Events</h2>
+
+
+    <h3>Set</h3>
+    <input type="text" class="newValue">
+    <button onClick="changevalue()">Set value</button>
+
+    <script>
+
+        var p = document.querySelector('progress-bar');
+
+        function changevalue(){
+            var value = document.querySelector('.newValue').value;
+            p.set(value);   
+        }
+    </script>
+
+</body>
+</html>
